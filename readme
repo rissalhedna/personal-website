@@ -1,0 +1,10 @@
+npm install node@17.7.1
+npm install node-fetch@2
+In package.json: 
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "lite": "lite-server"
+  }
+  
