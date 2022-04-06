@@ -23,15 +23,15 @@ const sources = [
     {src:'/img/5.png',id:5,name:"Habibi Drake.",description:"This one followed Drakes single, Laugh Now Cry Later. I just felt like giving it an arab twist, following Drakes' arabic verse on Only You Freestyle."},
     {src:'/img/6.jpg',id:6,name:"Praise The Plant.",description:"What happens when you litterally get high."},
     {src:'/img/7.jpg',id:7,name:"The Last Hotbox.",description:"Nothing to see here, just 12 buddies having a smoke over what seems to be a very hot topic. The newspaper in the background has an article about the dangers of smoking, emphasizing on the fact that it KILLS."},
-    {src:"/img/8.jpg",id:8,name:"",description:""},
-    {src:"/img/9.jpg",id:9,name:"",description:""},
-    {src:"/img/10.png",id:10,name:"",description:""},
-    {src:"/img/11.png",id:11,name:"",description:""},
-    {src:"/img/12.jpg",id:12,name:"",description:""},
-    {src:"/img/13.png",id:13,name:"",description:""},
-    {src:"/img/14.png",id:14,name:"",description:""},
-    {src:"/img/15.png",id:15,name:"",description:""},
-    {src:"/img/16.png",id:16,name:"",description:""}
+    {src:"/img/8.jpg",id:8,name:"Sheikh Bean",description:"Appearently, Mr.Bean took quite a life-changing trip to the Middle East."},
+    {src:"/img/9.jpg",id:9,name:"Ottoman Rockstars",description:"Ottoman rockstars are my favorite, only problem is microphones were not invented at that time yet"},
+    {src:"/img/10.jpg",id:10,name:"Hammoud Love",description:"Love in its purest form; a bottle of Hammoud after a long hot day out."},
+    {src:"/img/11.png",id:11,name:"Skaul",description:"This one came about after the controversy in Algeria about the teenagers participating in a French documenary depicting the Algerian youth as hopeless, to which I reply with SKAUL"},
+    {src:"/img/12.jpg",id:12,name:"Windows to the Soul",description:"This eye-candy piece came about by combining all my favorite things in one image; clouds, stars, and people."},
+    {src:"/img/13.png",id:13,name:"I Can't Breathe!",description:"I made this Arabic pop art piece right after the unfortunate events that cause the BLM marches in 2020, depicting the Arab artist Oumm Kelthoum as a protester in the streets."},
+    {src:"/img/14.png",id:14,name:"STUCK",description:"This one was a fun one, since it was just a result of experimenting around "},
+    {src:"/img/15.png",id:15,name:"Escape Reality",description:"Sometimes when all becomes mundane and routine-like, you just gotta escape and leave this boring canvas."},
+    {src:"/img/16.png",id:16,name:"Plato",description:"Ironically, Plato had always hated art and considered it to be 'false knowledge of reality'"}
 ]
 
 const app = express();
