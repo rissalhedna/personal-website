@@ -85,6 +85,6 @@ app.get("/images-collection",function(req,res){
     res.render(__dirname+"/view/imagesCollection.ejs",{images:sources})
 })
 
-app.listen(3000,function(){
+app.listen(process.env.PORT || 3000,function(){
     console.log(`connected on port 3000`)
 })
