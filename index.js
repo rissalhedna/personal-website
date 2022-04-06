@@ -40,11 +40,9 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-
-
-
 app.get('/',function(req,res){
     const access_token = `${process.env.APP_ID}|${process.env.CLIENT_TOKEN}`
+
     const url1 = `https://graph.facebook.com/v8.0/instagram_oembed?url=https://www.instagram.com/p/B7nm9pVhIss/&access_token=${access_token}`
     const url2 = `https://graph.facebook.com/v8.0/instagram_oembed?url=https://www.instagram.com/p/B7dSl1DBhks/&access_token=${access_token}`
     const url3 = `https://graph.facebook.com/v8.0/instagram_oembed?url=https://www.instagram.com/p/B8LwXqXhw0q/&access_token=${access_token}`
@@ -66,7 +64,6 @@ app.get('/',function(req,res){
             .then((json3) => {
                 
                 res.render(__dirname+'/view/index.ejs',{html1:json1.html,html2:json2.html,html3:json3.html})
-        
             });
         });
     }); 

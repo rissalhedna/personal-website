@@ -10,9 +10,9 @@ var previous
 if(window.pageYOffset===0){
     setTimeout(() => {
         heart.classList.add('heart-beat')
-    },1000);
-
+    },500);
 }
+
 // fetch("https://graph.facebook.com/v8.0/instagram_oembed?url=https://www.instagram.com/p/B7nm9pVhIss/&access_token=811534662938544|04c219f741b18bc2d9fd09f2574f82bc")
 //     .then(response => response.json())
 //     .then(data => console.log(data))
@@ -34,13 +34,13 @@ window.onscroll = function(){
         rightMe.classList.remove('right-b')
         rightMe.classList.add('slide-from-right')
     }
-    if(scroll>650){
+    if(scroll>1000){
         leftPhotopea.classList.remove('left-b')
         leftPhotopea.classList.add('slide-from-left')
         rightPhotopea.classList.remove('right-b')
         rightPhotopea.classList.add('slide-from-right')
     }
-    previous = window.pageYOffset
+    previous = window.pageYOffset+1
     
 }
 
