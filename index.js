@@ -40,34 +40,13 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
+
+// Instagram code after the Oembed issue:
 app.get('/',function(req,res){
-    const access_token = `${process.env.APP_ID}|${process.env.CLIENT_TOKEN}`
 
-    const url1 = `https://graph.facebook.com/v8.0/instagram_oembed?url=https://www.instagram.com/p/B7nm9pVhIss/&access_token=${access_token}`
-    const url2 = `https://graph.facebook.com/v8.0/instagram_oembed?url=https://www.instagram.com/p/B7dSl1DBhks/&access_token=${access_token}`
-    const url3 = `https://graph.facebook.com/v8.0/instagram_oembed?url=https://www.instagram.com/p/B8LwXqXhw0q/&access_token=${access_token}`
-    let l = []
-    let settings = { 
-        method: "Get"
-     };
-
-    fetch(url1, settings)
-    .then(res1 => res1.json())
-    .then((json1) => {
-        
-        fetch(url2, settings)
-        .then(res2 => res2.json())
-        .then((json2) => {
-            
-            fetch(url3, settings)
-            .then(res3 => res3.json())
-            .then((json3) => {
-                
-                res.render(__dirname+'/view/index.ejs',{html1:json1.html,html2:json2.html,html3:json3.html})
-            });
-        });
-    }); 
+    res.render(__dirname+'/view/index.ejs')
 })
+
 
 app.get('/images/:index',function(req,res){
     const image = sources.filter(function(image){
