@@ -9,7 +9,24 @@
     <title>PlayGround</title>
 </head>
 <body>
-
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '811534662938544',
+        xfbml      : true,
+        version    : 'v13.0'
+      });
+      FB.AppEvents.logPageView();
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
     <!-- Navbar starts -->
     <nav class="bg-dark fixed-top navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand text-white" href="/"><i class="fas fa-coffee"></i></a>

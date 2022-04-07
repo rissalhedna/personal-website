@@ -1,17 +1,23 @@
 *{
     box-sizing: border-box;
 }
+section{
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+.myart{
+    background-color: #4da197;
+}
 body{
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
 }
-section.height{
+/* section.height{
     overflow: hidden;
     min-height: 100vh;
-}
+} */
 
 header{
-    
     height: 100vh;
     display: flex;
     flex-direction: column;
