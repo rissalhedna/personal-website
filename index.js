@@ -50,8 +50,8 @@ app.get('/',function(req,res){
 
 app.get('/images/:index',function(req,res){
     const image = sources.filter(function(image){
-        return image.id == req.params.index
-    })
+    return image.id == req.params.index
+})
 
 
     res.render(__dirname+"/view/singleImage.ejs",{image:image[0]})

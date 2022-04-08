@@ -28,7 +28,7 @@ window.onscroll = function(){
         nav.classList.add("show")
     }
 
-    if(scroll > 200){
+    if(scroll > 100){
         leftMe.classList.remove('left-b')
         leftMe.classList.add('slide-from-left')
         rightMe.classList.remove('right-b')

@@ -1,12 +1,20 @@
 *{
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+    position: relative;
+}
 section.instagram{
     background: url("/img/insta.png");
+}
+section.collection{
+    min-height: 100vh;
 }
 section{
     padding-top: 70px;
     padding-bottom: 80px;
+    max-width: 100%;
 }
 
 .myart{
