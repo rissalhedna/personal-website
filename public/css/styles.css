@@ -1,6 +1,35 @@
 *{
     box-sizing: border-box;
 }
+h2.title{
+
+    border-bottom: solid 1px black;
+    margin: 0%;
+    padding: 0%;
+    padding-bottom: 10px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+.skills{
+    background: url("/img/skills-bg.png");
+    background-repeat: repeat-y;
+    background-position-x: right;
+    background-color: #53a551;
+}
+div.skill{
+    box-shadow: -11px 10px 13px -5px rgba(0,0,0,0.37);
+    
+}
+div.skill:hover{
+    box-shadow: -11px 10px 13px 0px rgba(0,0,0,0.37);
+}
+/* section.myart{
+    background: url("/img/paint.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+} */
 body{
     overflow-x: hidden;
     position: relative;
@@ -17,9 +46,10 @@ section{
     max-width: 100%;
 }
 
-.myart{
-    background-color: #4da197;
+.myskills{
+    background-color: #4da135;
 }
+
 body{
     font-family: 'Josefin Sans', sans-serif;
     text-align: center;
@@ -36,6 +66,7 @@ header{
     align-items: center;
     justify-content: center;
 }
+
 h1{
     font-size: 70px;
 }
@@ -44,18 +75,18 @@ h1{
     transition: all .2s ease-in;
 }
 
-
 .hide{
     transform: translateY(-100%);
     opacity: 0.5;
 }
+
 .show{
     transform: translateY(0);
     opacity: 1;
 }
 
 .content{
-    grid-gap: 10px;
+    grid-gap: 5px;
     margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -130,7 +161,7 @@ img.img-shadow:hover{
 }
 
 .single-image{
-    width: 50%;
+    width: 70%;
     padding-top: 30px;
 }
 

@@ -27,19 +27,26 @@ window.onscroll = function(){
         nav.classList.remove("hide")
         nav.classList.add("show")
     }
-
-    if(scroll > 100){
+    if(screen.width < 800){
         leftMe.classList.remove('left-b')
-        leftMe.classList.add('slide-from-left')
         rightMe.classList.remove('right-b')
-        rightMe.classList.add('slide-from-right')
-    }
-    if(scroll>1000){
         leftPhotopea.classList.remove('left-b')
-        leftPhotopea.classList.add('slide-from-left')
         rightPhotopea.classList.remove('right-b')
-        rightPhotopea.classList.add('slide-from-right')
+    }else{
+        if(scroll > 100){
+            leftMe.classList.remove('left-b')
+            leftMe.classList.add('slide-from-left')
+            rightMe.classList.remove('right-b')
+            rightMe.classList.add('slide-from-right')
+        }
+        if(scroll>1000){
+            leftPhotopea.classList.remove('left-b')
+            leftPhotopea.classList.add('slide-from-left')
+            rightPhotopea.classList.remove('right-b')
+            rightPhotopea.classList.add('slide-from-right')
+        }
     }
+
     previous = window.pageYOffset+1
     
 }
