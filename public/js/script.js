@@ -7,6 +7,8 @@ const leftPhotopea = document.getElementById('leftPh')
 const rightPhotopea = document.getElementById('rightPh')
 var previous
 
+ 
+
 if(window.pageYOffset===0){
     setTimeout(() => {
         heart.classList.add('heart-beat')
@@ -33,13 +35,13 @@ window.onscroll = function(){
         leftPhotopea.classList.remove('left-b')
         rightPhotopea.classList.remove('right-b')
     }else{
-        if(scroll > 100){
+        if(scroll>100){
             leftMe.classList.remove('left-b')
             leftMe.classList.add('slide-from-left')
             rightMe.classList.remove('right-b')
             rightMe.classList.add('slide-from-right')
         }
-        if(scroll>1000){
+        if(scroll>1500){
             leftPhotopea.classList.remove('left-b')
             leftPhotopea.classList.add('slide-from-left')
             rightPhotopea.classList.remove('right-b')

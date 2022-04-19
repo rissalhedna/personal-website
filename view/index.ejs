@@ -1,7 +1,7 @@
 <%- include('partials/header'); -%>
 
 <!-- Header starts-->
-<header class="pt-5 bg-primary">
+<header class="header pt-5 bg-primary">
   <div class="container-fluid ">
     <h1 class="font-weight-bold text-white">Hello there!<i class="text-danger fas fa-heart"></i></h1>
     <h3>Welcome to my website!</h3>
@@ -11,7 +11,7 @@
 <!-- Header ends -->
 
 <!-- About me -->
-<section class="about height align-items-center justify-content-center">
+<section class="about height align-items-center justify-content-center" id="aboutme">
   <div class="container-fluid m-auto">
     <h2 class="mt-4 mb-5 title">About Me</h2>
     <div class="row text-center mt-2 mb-5">
@@ -51,7 +51,7 @@
 <!-- About me ends-->
 
 <!-- My skills -->
-<section class="skills height pb-5">
+<section class="skills height pb-5" id="myskills">
   <div class="container-fluid m-auto">
     <h2 class="mt-4 mb-5 text-white title">My Skills <img src="img/skill.png" width="35px" alt=""></h2>
     <div class="container-fluid align-items-center justify-content-center">
@@ -78,7 +78,6 @@
             </div>
           </div>
         </div>
-
         <div class="col-12 col-lg-6 col-xl-4 text-white">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -110,7 +109,7 @@
 <!-- My skills ends -->
 
 <!-- My Art -->
-<section class="myart height bg-light">
+<section class="myart height bg-light" id="myart">
   <div class="container-fluid px-5">
     <h2 class="text-dark mb-0 title">My Art <img src="img/palette-solid.png" width="30px" alt=""></h2>
     <div class="row pb-5">
@@ -129,8 +128,8 @@
 </section>
 <!-- My Art ends -->
 
-<!-- Instagram starts -->
-<section class="height instagram">
+<!-- My Writings starts -->
+<section class="height instagram" id="mywritings">
   <div class="container-fluid">
     <h2 class="pt-4 mb-2 text-white title">My Writings <img src="img/pencil-solid.png" width="30px" alt=""></h2>
     <p class="lead text-white mb-5">This is a collection of my favorite writings.</p>
@@ -151,6 +150,6 @@
     </div>
   </div>
 </section>
-<!-- Instagram ends -->
+<!-- My Writings ends -->
 
 <%- include('partials/footer'); -%>
